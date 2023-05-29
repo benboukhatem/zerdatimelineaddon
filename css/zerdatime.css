@@ -1,0 +1,237 @@
+.zer-horizontal-timeline .time-content {
+    width: 55%;
+    float: right;
+}
+.zer-horizontal-timeline .loadingline.selected{
+	background-color: #1AB89F;
+	    width: 100px;
+}
+.zer-horizontal-timeline .timeline-title {
+	font-family: 'Larken';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 60px;
+	color: #151B44;
+	text-align: center;    
+	margin: 0 0 55px 0;
+}
+ 
+.zer-horizontal-timeline .clicYearTime:hover ~ div.loadingline {
+    background: #D5D6DD;
+}
+.swiper-free-mode>.swiper-wrapper { 
+    width: 100%;
+}
+.zer-horizontal-timeline  .swiper.timeline.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-free-mode.swiper-backface-hidden {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px; 
+    margin-bottom: 37px;width: 100%;    
+	overflow: hidden;
+}
+.zer-horizontal-timeline div.events-content {
+    width: 100%;
+    height: 416px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 2%);
+}
+.zer-horizontal-timeline h2.title-time-element {
+	width: 100%;
+	margin-top: 28px;
+    font-family: 'Larken';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: #151B44;
+}
+.zer-horizontal-timeline .content-time-element p {
+    font-family: "Helvetica", Sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #676B85;margin-right: 63px;
+}
+.zer-horizontal-timeline .yearAffiche {
+    font-family:"Helvetica", Sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #151B44;
+    text-align: center;
+	margin-bottom: -15px;cursor: pointer;
+}
+.zer-horizontal-timeline div.clicYearTime {
+    display: inline-block;
+	width: 100px !important;background: none;
+}
+.zer-horizontal-timeline .time-picture {
+    width: 40%;
+    height: 416px;
+    float: left;
+}
+.zer-horizontal-timeline div.swiper-button-disabled{
+	background:none;
+}
+.zer-horizontal-timeline div.swiper-button-lock {
+   color:#D5D6DD;
+	display:inline;
+}
+.zer-horizontal-timeline .nextTime{
+	right: 5px;
+	background-image: url(https://candereldev.wpengine.com/wp-content/uploads/2023/01/timenext.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.zer-horizontal-timeline .prevTime{
+	background-image: url(https://candereldev.wpengine.com/wp-content/uploads/2023/01/timeprev.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+	
+}
+.zer-horizontal-timeline .nextTime, .zer-horizontal-timeline .prevTime{   
+	line-height: 50px;
+    text-align: center;
+    position: absolute;
+	width: 15px;
+    height: 18px;
+    margin-top: -80px; 
+    z-index: 99;cursor: pointer;
+}
+.zer-horizontal-timeline .loadingline .ui-widget-header {
+     overflow: hidden;
+    width: 100px !important;
+    background: #1AB89F; 
+   height: 4px;
+}
+
+.zer-horizontal-timeline .loadingline {
+  position: relative;
+  display: inline-block;
+  max-width: 100px;
+  height: 4px;
+  background: none; 
+  overflow: hidden;
+}
+
+.zer-horizontal-timeline .loadingline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 4px; overflow: hidden;
+	animation-timing-function: linear;
+  
+}
+.zer-horizontal-timeline .ui-progressbar-indeterminate, .loadinglineItem .loadingline, .selected  {
+ 	animation: load 2.7s;
+	 -webkit-animation: load 2.7s;
+  -moz-animation: load 2.7s;
+  -o-animation: load 2.7s;
+  -ms-animation: load 2.7s; 
+    height: 4px;
+	width: 100px; 
+}
+.fadeContentTime{
+	/*animation: fadeIn 2.5s;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+	animation-timing-function: linear;*/
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes load {
+  0% {
+    width: 0;
+    background: #1AB89F;
+  }
+  100% {
+    width: 100%;
+    background: #1AB89F;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+	.zer-horizontal-timeline .loadingline { 
+	  left: calc((100% - 100px)/2);
+	}
+	 .zer-horizontal-timeline div.clicYearTime {
+		width: 100% !important;
+ 	 }
+	.zer-horizontal-timeline .nextTime, .zer-horizontal-timeline .prevTime{
+		margin-top: -40px;
+	}
+	.zer-horizontal-timeline .nextTime {
+		right: 10px;
+	}
+	.zer-horizontal-timeline .yearAffiche{
+		margin-left: 0px;
+	}
+	.zer-horizontal-timeline .swiper.timeline.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-free-mode.swiper-backface-hidden{
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+	.zer-horizontal-timeline .prevTime {
+		left: 10px;
+	}
+	.zer-horizontal-timeline .time-picture {
+		width: 100%; 
+	}
+	.zer-horizontal-timeline .about_time {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+    }
+    .zer-horizontal-timeline .time-picture {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+    }
+    .zer-horizontal-timeline .time-content {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+    }
+	.zer-horizontal-timeline div.events-content{
+		width: 100%;
+		height: auto; 
+		position: relative;
+		margin-top: 20px;
+	}
+	.zer-horizontal-timeline .time-content {
+		width: 100%;
+		float: right;
+		padding: 0px 25px;
+	}
+	.zer-horizontal-timeline div.events-content{
+		margin-bottom: 20px;
+	}
+	.zer-horizontal-timeline .timeline-title{
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 40px;
+		margin: 0 0 25px 0;
+	}
+	.zer-horizontal-timeline h2.title-time-element{
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.zer-horizontal-timeline .content-time-element p{
+		margin-right:0px;
+	}
+}
